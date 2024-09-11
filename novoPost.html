@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <title>Cadastro de Post</title>
+</head>
+
+<body>
+    <div class="container-cadastro">
+        <h1>Crie um Post</h1>
+        <hr>
+        <form id="form-post">
+            <div class="input-container">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" />
+                <span id="error-titulo" style="color: red"></span>
+            </div>
+
+            <div class="input-container">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" rows="5"></textarea>
+                <span id="error-descricao" style="color: red"></span>
+            </div>
+
+            <div>
+                <label for="categoria">Categoria:</label>
+                <select id="categoria">
+                    <option value=""></option>
+                    <option value="caes">Cães</option>
+                    <option value="gatos">Gatos</option>
+                    <option value="aves">Aves</option>
+                    <option value="aquaticos">Aquáticos</option>
+                    <option value="diversos">Diversos</option>
+                </select>
+                <span id="error-categoria" style="color: red"></span>
+            </div>
+
+            <div class="input-container">
+                <label for="foto">Selecione uma foto</label>
+                <input type="url" id="foto" />
+                <span id="error-foto" style="color: red"></span>
+            </div>
+
+            <div>
+                <button class="button-submit">Enviar</button>
+            </div>
+
+            <script src="scripts/novoPost.js"></script>
+        </form>
+</body>
+
+</html>
