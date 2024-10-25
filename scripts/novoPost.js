@@ -64,7 +64,7 @@ function adicionarPost(event) {
             foto: foto
         }
 
-        let listaNoLocalStorage = JSON.parse(localStorage.getItem("posts")) || [] //vai no local storage e pega a lista
+        let listaNoLocalStorage = JSON.parse(localStorage.getItem("posts")) || [] //pega a lista no local storage
 
         listaNoLocalStorage.push(post)
 

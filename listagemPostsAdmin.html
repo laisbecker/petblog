@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Listagem de Posts</title>
+</head>
+
+<body>
+    <div class="container-listagem">
+        <div class="cabecalho-listagem">
+            <h2>Posts do PetBlog</h2>
+            <button type="button" class="button-novo-post" onclick="window.location.href='novoPost.html'">
+                <img src="assets/plus.png" alt="botão de mais/adicionar"> Novo Post
+            </button>
+        </div>
+
+        <table border="1" class="estilo-table">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Categoria</th>
+                    <th>Data de Criação</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista-posts">
+                <!--posts ficarão aqui-->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="scripts/listagemPostsAdmin.js"></script>
+</body>
+
+</html>
